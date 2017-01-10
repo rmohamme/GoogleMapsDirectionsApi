@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+<html>
+
+<head>
+    <style src="style.css"></style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <div id="warnings-panel"></div>
+    <script src="test.js">
+    </script>
+    <script async defer 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1ecdevKZGALhPvZWg_DM4k2epUyMCG4w&callback=initMap">
+    </script>
+</body>
+
+</html>
+
+-->
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Directions service (complex)</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  <div class="container">
+      <h1>Welcome</h1>
+      <p>This project is still a work in progress so ignore the error message at the beginning. From the dropdown menu, select "Current 
+      Location", your mode of transport, and whether you want to stop at a donut shop or coffee shop on your way to work. Enjoy your experience!</p>
+  </div>
+   <div class="container">
+       <form action="">
+          <p>Current Location: </p>
+           Latitude: <input type="text" id="latitude"><br>
+           Longitude: <input type="text" id="longitude"><br>
+           <input type="submit" value="submit">
+       </form>
+   </div>
+    <div id="floating-panel">
+    <b>Start: </b>
+    <select id="start">
+     <option value="">None</option>
+      <option value="penn station, new york, ny">Current Location</option>
+    </select>
+    <b>End: </b>
+    <select id="end">
+      <option value="282 2nd St, San Francisco, CA, 94105">ClickTime</option>
+    </select>
+    <b>Mode of Transport</b>
+    <select id="transport">
+        <option value="WALKING">walking</option>
+        <option value="BICYCLING">Biking</option>
+        <option value="TRANSIT">Transit</option>
+    </select>
+    <b>Donut or Coffee shop:</b>
+    <select name="shop" id="shop">
+        <option value="135 4th St, San Francisco, CA, 94103">Coffee Shop</option>
+        <option value="6 6th St, San Francisco, CA, 94103">Donut Shop</option>
+    </select>
+    </div>
+    <div id="map"></div>
+    &nbsp;
+    <div id="warnings-panel"></div>
+      <script src="test.js"></script>
+      <script async defer 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1ecdevKZGALhPvZWg_DM4k2epUyMCG4w&callback=initMap">
+    </script>
+    </body>
+</html>
